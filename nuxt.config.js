@@ -2,18 +2,18 @@
 export default defineNuxtConfig({
 
   css: [
-    'primevue/resources/themes/saga-blue/theme.css',
-    'primevue/resources/primevue.css',
-    'primeicons/primeicons.css',
-  ],
+      'primevue/resources/themes/lara-dark-purple/theme.css',
+      'primevue/resources/primevue.css',
+      'primeicons/primeicons.css',
+    ],
 
-  modules: [
-    '@pinia/nuxt',
-  ],
+    modules: [
+      '@pinia/nuxt',
+    ],
 
-  build: {
-    transpile: [
-      'primevue'
-    ]
-  },
-})
+    build: {
+      transpile: [
+        'primevue'
+      ]
+    },
+  })

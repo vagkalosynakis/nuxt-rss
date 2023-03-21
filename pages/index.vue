@@ -1,15 +1,29 @@
 <template>
-    <div>
-         {{ date }}
-    </div>
-    <Calendar v-model="date" showTime/>
+
+  <Menubar :model="items" exact="true"/>
+
+  <Accordion :activeIndex="0">
+    <AccordionTab header="Header I">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+        </p>
+    </AccordionTab>
+</Accordion>
 </template>
 
 <script setup>
-import { useGlobalStore } from "@/store/globalStore";
-import Calendar from 'primevue/calendar';
+import Menubar from 'primevue/menubar';
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
 
-const store = useGlobalStore()
-const name = store.fullName
-const date = ref(null)
+const items = ref([
+  {
+    label: 'Home',
+    to: '/',
+    icon: 'pi pi-home',
+  }
+])
+
 </script>
