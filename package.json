@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
-    "pinia": "^2.0.33"
+    "pinia": "^2.0.33",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.26.0"
   }
 }
