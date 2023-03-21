@@ -24,4 +24,13 @@ export default defineNuxtConfig({
         'primevue'
       ]
     },
+
+    runtimeConfig: {
+      public: {
+        rssFeeds: [
+          'https://www.protothema.gr/rss'
+        ]
+      }
+    }
+
   })
