@@ -1,6 +1,6 @@
 <template>
 
-  <Menubar :model="items" exact="true"/>
+  <Menubar :model="items" exact/>
 
   <Accordion :activeIndex="0">
     <AccordionTab header="Header I">
